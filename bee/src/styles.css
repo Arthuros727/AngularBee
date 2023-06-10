@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    height: 100%;
+    background: linear-gradient(to bottom right, #21A393, #0A073F);
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  } 
+
+  .image{
+    /* margin-top: 10vw; */
+    top: 10vw;
+    left: 15vw;
+    position: absolute;
+    padding: 2vw;
+  }
+
+  .image img{
+    border-radius: 50%;
+    border: solid yellow 10px;
+    margin: 2vw;
+    /* padding: 2vw; */
+  }
+
+  #star1 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #star1:hover {
+    transform: translateY(-15px);
+  }
+
+  #star2 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #star2:hover {
+    transform: translateY(-15px);
+  }
+
+  #cash1 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #cash1:hover {
+    transform: translateY(-15px);
+  }
+
+  #cash2 {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  #cash2:hover {
+    transform: translateY(-15px);
+  }
+
+  @media only screen and (max-width:800px){
+
+    html {
+        height: 115%;
+        background: linear-gradient(to bottom right, #21A393, #0A073F);
+      }
+      
+      body {
+        margin: 0;
+        padding: 0;
+        /* height: 130%; */
+      } 
+    .image{
+        /* margin-top: 10vw; */
+        top: 10vw;
+        left: 25vw;
+        position: absolute;
+        padding: 2vw;
+      }
+
+      #star1:hover {
+        transform: translateX(15px);
+      }
+
+      #star2:hover {
+        transform: translateX(15px);
+      }
+
+      #cash1:hover {
+        transform: translateX(15px);
+      }
+
+      #cash2:hover {
+        transform: translateX(15px);
+      }
+  }
+  
