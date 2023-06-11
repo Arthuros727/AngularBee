@@ -1,3 +1,25 @@
 #X{
     margin-left: 95% ;
 }
+
+#X:hover{
+    scale: 1.2;
+}
+/* .mat-mdc-dialog-surface.mdc-dialog__surface[data-testid="custom-dialog"] {
+    border: none;
+    border-radius: 200px;
+  } */
+  #name{
+    margin-bottom: 10%;
+  }
+
+
+.modal {
+    /* background-color: #f1f1f1; */
+    border: none;
+    /* border-radius: 20px; */
+    overflow: hidden;
+    background-color: #F8ECBE;
+    width: 100%;
+    display:inline-block;
+  }

@@ -1,13 +1,19 @@
-<div class="container">
-        <p id="X" (click)="closeX()">X</p>
+<div class="mat-mdc-dialog-surface mdc-dialog__surface" data-testid="custom-dialog">
     
-        <label for="name">Name :</label>
-        <input id="name" type="text">
-        <label for="name">email:</label>
-        <input id="email" type="text">
-
-        <button type="submit" id="submit" (click)="sub()">OK !</button>
-
+    <div class="modal">
         
-    
+        <div class="container">
+            <p id="X" (click)="closeX()">X</p>
+            
+            <label for="name">Name :</label>
+            <input id="name" type="text">
+            <label for="name">email:</label>
+            <input id="email" type="text">
+            
+            <button type="submit" id="submit" (click)="sub()">OK !</button>
+            
+            
+            
+        </div>
+    </div>
 </div>

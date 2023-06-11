@@ -4,6 +4,96 @@ html {
     background: linear-gradient(to bottom right, #21A393, #0A073F);
   }
   
+  #X{
+    cursor: pointer;
+  }
+
+  #email{
+    margin-bottom: 2vw;
+  }
+
+
+
+  #submit{
+    background-color: yellow;
+    border: solid black 1px;
+    margin: 1vw;
+    margin-left: 2vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+
+  #submit:hover{
+    animation-name: example2;
+    animation-duration: 0.5s;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  #submit:not(:hover) {
+    animation-name: example3;
+    animation-duration: 0.5s;
+  }
+
+  label{
+    margin-left: 2vw;
+  }
+  .container input {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 2vw;
+  }
+
+  input[type=text]
+{
+    background-color: #F8ECBE;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    height: 20px;
+    padding-left: 10px;
+    text-decoration: none;
+    outline: none; 
+    transition: width 0.3s ease;
+    width: 30%;
+
+
+}
+@keyframes example {
+  from {width:  30%;}
+  to {width: 80%;}
+}
+
+@keyframes example2 {
+  from {padding-left: 0.5vw; padding-right: 0.5vw;}
+  to {padding-left:  2vw; padding-right: 2vw;}
+    
+}
+
+@keyframes example3 {
+  from {padding-left:  2vw; padding-right: 2vw;}
+  to {padding-left: 0.5vw; padding-right: 0.5vw;}
+    
+}
+
+input[type=text]:hover{
+  border-bottom: 1px solid rgb(105, 105, 105);
+  animation-name: example;
+  animation-duration: 0.5s;
+  width: 80%;
+  
+}
+input[type="text"]:focus {
+  border-bottom: 2px solid rgb(181, 192, 113);
+}
+
+  .mat-mdc-dialog-surface{
+    background-color: #F8ECBE;
+
+  }
+  
   body {
     margin: 0;
     padding: 0;
@@ -12,13 +102,15 @@ html {
 
   .image{
     /* margin-top: 10vw; */
-    top: 10vw;
-    left: 15vw;
+    top: 20%;
+    left: 16%;
+    right: 10%;
     position: absolute;
     padding: 2vw;
   }
 
   .image img{
+    width: 15%;
     border-radius: 50%;
     border: solid yellow 10px;
     margin: 2vw;
@@ -57,7 +149,7 @@ html {
     transform: translateY(-15px);
   }
 
-  @media only screen and (max-width:800px){
+  @media only screen and (max-width:810px){
 
     html {
         height: 115%;
@@ -69,10 +161,20 @@ html {
         padding: 0;
         /* height: 130%; */
       } 
+      
+      .dialog-width {
+        width: 80%;
+      }
+
     .image{
         /* margin-top: 10vw; */
+        width: 110%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 2vw;
         top: 10vw;
-        left: 25vw;
+        left: 35vw;
         position: absolute;
         padding: 2vw;
       }

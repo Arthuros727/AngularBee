@@ -16,12 +16,7 @@ import {YourDialogComponent } from '../your-dialog/your-dialog.component';
       <img id="cash2" src="./assets/cash.jpg">
       <img id="star2" src="./assets/star.jpg">
     </div>
-  `,
-  styles: [`
-    .image {
-      /* Votre style CSS ici */
-    }
-  `]
+  `
 })
 
 export class ImageComponent {
@@ -29,18 +24,44 @@ export class ImageComponent {
   openModal(imageId: string) {
 
       const dialogRef = this.dialog.open(YourDialogComponent, {
-        width: '400px',
+        width: '30%',
+        height: '80%',
+        
+
         data: { imageId },
         position: {
           
-          top: '-20vw',
-          left: '50px'
+          top: '-700px',
+          left: '35%'
+        },
+        panelClass: 'modal'
+        
+        
+      });
+      window.addEventListener('resize', () => {
+        if (window.innerWidth <= 810) {
+          dialogRef.updateSize('50%');
+          dialogRef.updatePosition({
+            top: '-700px',
+            left: '25%'
+          })
+        } else {
+          dialogRef.updateSize('30%', "80%");
+          dialogRef.updatePosition({
+            top: '-700px',
+            left: '35%'
+          })
         }
       });
+      if (window.innerWidth < 810) {
+        dialogRef.updateSize('50%');
+        dialogRef.updatePosition({
+          top: '-700px',
+          left: '25%'
+        })
+      }
     
-      dialogRef.afterClosed().subscribe(result => {
-        console.log('Résultat du dialogue :', result);
-      });
+     
     }
     
   }
