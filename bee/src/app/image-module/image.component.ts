@@ -25,13 +25,13 @@ export class ImageComponent {
 
       const dialogRef = this.dialog.open(YourDialogComponent, {
         width: '30%',
-        height: '80%',
+        height: '30%',
         
 
         data: { imageId },
         position: {
           
-          top: '-700px',
+          top: '100px',
           left: '35%'
         },
         panelClass: 'modal'
@@ -42,13 +42,13 @@ export class ImageComponent {
         if (window.innerWidth <= 810) {
           dialogRef.updateSize('50%');
           dialogRef.updatePosition({
-            top: '-700px',
+            top: '100px',
             left: '25%'
           })
         } else {
-          dialogRef.updateSize('30%', "80%");
+          dialogRef.updateSize('30%', "30%");
           dialogRef.updatePosition({
-            top: '-700px',
+            top: '100px',
             left: '35%'
           })
         }
@@ -56,7 +56,7 @@ export class ImageComponent {
       if (window.innerWidth < 810) {
         dialogRef.updateSize('50%');
         dialogRef.updatePosition({
-          top: '-700px',
+          top: '100px',
           left: '25%'
         })
       }
