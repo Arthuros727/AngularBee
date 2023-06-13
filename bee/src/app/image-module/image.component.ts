@@ -25,7 +25,8 @@ export class ImageComponent {
 
       const dialogRef = this.dialog.open(YourDialogComponent, {
         width: '30%',
-        height: '30%',
+        height: '31%',
+        
         
 
         data: { imageId },
@@ -33,6 +34,7 @@ export class ImageComponent {
           
           top: '100px',
           left: '35%'
+          
         },
         panelClass: 'modal'
         

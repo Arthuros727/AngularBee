@@ -149,6 +149,10 @@ input[type="text"]:focus {
     transform: translateY(-15px);
   }
 
+  .container{
+    overflow: hidden;
+  }
+
   @media only screen and (max-width:810px){
 
     html {
